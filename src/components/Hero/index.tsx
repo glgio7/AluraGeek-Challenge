@@ -1,4 +1,5 @@
 import background from "../../assets/banner-image.png";
+import Button from "../Button";
 import * as S from "./styles";
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
 			<div className="text-container">
 				<h2>Dezembro Promocional</h2>
 				<h3>Produtos selecionados com 33% de desconto</h3>
-				<button>Ver consoles</button>
+				<Button buttonText="Ver consoles" />
 			</div>
 		</S.HeroContainer>
 	);

@@ -2,6 +2,7 @@ import ProductCard from "../ProductCard";
 import * as S from "./styles";
 
 interface IProduct {
+	title?: string;
 	name: string;
 	price: string;
 	href: string;

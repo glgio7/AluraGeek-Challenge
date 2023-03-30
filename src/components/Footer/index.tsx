@@ -1,6 +1,7 @@
 import * as S from "./styles";
 import logoVector from "../../assets/logo-vector.svg";
 import logoText from "../../assets/logo-text.svg";
+import Button from "../Button";
 
 const Footer = () => {
 	return (
@@ -45,7 +46,7 @@ const Footer = () => {
 					<label htmlFor="name">Nome</label>
 					<input id="name" name="name" type={"text"} required />
 					<textarea placeholder="Escreva a sua mensagem" />
-					<input type={"submit"} value={"Enviar Mensagem"} />
+					<Button buttonText="Enviar mensagem" className="submit-button" />
 				</form>
 			</div>
 			<div className="dev-container">

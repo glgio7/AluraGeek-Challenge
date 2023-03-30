@@ -94,23 +94,11 @@ export const FooterContainer = styled.footer`
 		}
 	}
 
-	input[type="submit"] {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		cursor: pointer;
-
-		padding: 16px;
+	.submit-button {
 		margin-top: 16px;
-
-		font-size: 16px;
 
 		width: 165px;
 		height: 51px;
-
-		background: #2a7ae4;
-		color: #fff;
 	}
 
 	.dev-container {

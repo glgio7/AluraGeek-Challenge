@@ -39,34 +39,11 @@ export const HeroContainer = styled.div<{ background: string }>`
 		color: #fff;
 	}
 
-	.text-container button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		padding: 16px;
-
-		font-size: 16px;
-
-		width: 130px;
-		height: 51px;
-
-		background: #2a7ae4;
-		color: #fff;
-	}
-
 	@media screen and (max-width: 1024px) {
 		padding: 32px;
 
 		.text-container {
 			height: 160px;
-		}
-
-		.text-container button {
-			font-size: 14px;
-
-			width: 120px;
-			height: 40px;
 		}
 	}
 	@media screen and (max-width: 768px) {

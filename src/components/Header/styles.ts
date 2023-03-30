@@ -11,6 +11,8 @@ export const HeaderContainer = styled.header`
 	height: 115px;
 	width: 100%;
 
+	background-color: #fff;
+
 	.logo-container {
 		display: flex;
 		align-items: center;
@@ -51,6 +53,10 @@ export const HeaderContainer = styled.header`
 	}
 
 	.login-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
 		border: 1px solid #2a7ae4;
 
 		color: #2a7ae4;
