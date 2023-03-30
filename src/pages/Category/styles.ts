@@ -33,16 +33,9 @@ export const Wrapper = styled.ul`
 			opacity: 0.8;
 		}
 	}
-	li:nth-child(n + 8) {
-		display: none;
-	}
 
 	@media screen and (max-width: 1024px) {
 		padding: 32px;
-
-		li:nth-child(n + 6) {
-			display: none;
-		}
 	}
 
 	@media screen and (max-width: 768px) {

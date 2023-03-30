@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import ProductsWrapper from "../components/ProductsWrapper";
+import Products from "../db.json";
 
 interface IProduct {
 	title?: string;
@@ -13,86 +14,7 @@ interface IProductsLists {
 	[key: string]: IProduct[];
 }
 
-const productsLists: IProductsLists = {
-	star_wars: [
-		{ title: "Star Wars", name: "", price: "", href: "", image_path: "" },
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/sw1.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/sw2.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/sw3.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/sw4.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/sw5.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/sw6.jpg",
-		},
-	],
-	consoles: [
-		{ title: "Consoles", name: "", price: "", href: "", image_path: "" },
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/cons1.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/cons2.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/cons3.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/cons4.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/cons5.jpg",
-		},
-		{
-			name: `Produto ${Math.round(Math.random() * 100)}`,
-			price: `R$ ${Math.round(Math.random() * 100)}`,
-			href: "/",
-			image_path: "/img/cons6.jpg",
-		},
-	],
-};
+const productsLists: IProductsLists = Products;
 
 const Home = () => {
 	return (
@@ -102,7 +24,7 @@ const Home = () => {
 				return (
 					<ProductsWrapper
 						key={index}
-						title={item[0].title || ""}
+						title={item[0].title}
 						productList={item}
 					/>
 				);
