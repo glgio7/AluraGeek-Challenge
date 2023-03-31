@@ -44,47 +44,40 @@
 			"image_path": "/img/sw6.jpg"
 		},
 		{
-			"title": "Star Wars",
-			"name": "",
-			"price": "",
-			"href": "",
-			"image_path": ""
-		},
-		{
 			"name": "Produto 42",
 			"price": "R$ 73",
 			"href": "/",
-			"image_path": "/img/sw1.jpg"
+			"image_path": "/img/sw7.jpg"
 		},
 		{
 			"name": "Produto 91",
 			"price": "R$ 76",
 			"href": "/",
-			"image_path": "/img/sw2.jpg"
+			"image_path": "/img/sw8.jpg"
 		},
 		{
 			"name": "Produto 41",
 			"price": "R$ 29",
 			"href": "/",
-			"image_path": "/img/sw3.jpg"
+			"image_path": "/img/sw9.jpg"
 		},
 		{
 			"name": "Produto 66",
 			"price": "R$ 69",
 			"href": "/",
-			"image_path": "/img/sw4.jpg"
+			"image_path": "/img/sw10.jpg"
 		},
 		{
 			"name": "Produto 16",
 			"price": "R$ 77",
 			"href": "/",
-			"image_path": "/img/sw5.jpg"
+			"image_path": "/img/sw11.jpg"
 		},
 		{
 			"name": "Produto 55",
 			"price": "R$ 95",
 			"href": "/",
-			"image_path": "/img/sw6.jpg"
+			"image_path": "/img/sw12.jpg"
 		}
 	],
 	"consoles": [
