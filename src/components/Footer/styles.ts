@@ -154,9 +154,11 @@ export const FooterContainer = styled.footer`
 		}
 
 		.logo-container {
+			width: 95%;
 			justify-content: center;
 		}
 		.footer__list {
+			width: 95%;
 			align-items: center;
 		}
 

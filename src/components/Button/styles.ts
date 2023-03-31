@@ -15,6 +15,12 @@ export const ButtonContainer = styled.button`
 	background: #2a7ae4;
 	color: #fff;
 
+	transition: all 300ms;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
 	@media screen and (max-width: 1024px) {
 		font-size: 14px;
 

@@ -21,7 +21,7 @@ export const Wrapper = styled.ul`
 		text-transform: uppercase;
 	}
 
-	.wrapper__header a {
+	/* .wrapper__header a {
 		font-size: 16px;
 		font-weight: 700;
 
@@ -32,7 +32,7 @@ export const Wrapper = styled.ul`
 		&:hover {
 			opacity: 0.8;
 		}
-	}
+	} */
 
 	@media screen and (max-width: 1024px) {
 		padding: 32px;
@@ -40,5 +40,17 @@ export const Wrapper = styled.ul`
 
 	@media screen and (max-width: 768px) {
 		padding: 16px;
+
+		.wrapper__header {
+			flex-wrap: wrap;
+		}
+
+		.wrapper__header span {
+			width: 100%;
+		}
+
+		.wrapper__header a {
+			margin-top: 8px;
+		}
 	}
 `;

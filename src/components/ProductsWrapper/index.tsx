@@ -1,14 +1,7 @@
-import { Link } from "react-router-dom";
-import ProductCard from "../ProductCard";
 import * as S from "./styles";
-
-interface IProduct {
-	title?: string;
-	name: string;
-	price: string;
-	href: string;
-	image_path: string;
-}
+import { Link } from "react-router-dom";
+import { IProduct } from "../../pages/index";
+import ProductCard from "../ProductCard";
 
 type ProductsWrapperProps = {
 	title?: string;
@@ -17,8 +10,6 @@ type ProductsWrapperProps = {
 
 const ProductsWrapper = ({ title, productList }: ProductsWrapperProps) => {
 	const address = title?.toLowerCase().replace(" ", "+");
-
-	console.log(address);
 
 	return (
 		<S.Wrapper>

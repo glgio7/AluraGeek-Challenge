@@ -5,7 +5,7 @@ export const LoginContainer = styled.form`
 	flex-direction: column;
 	align-items: center;
 
-	padding-top: 92px;
+	padding: 92px 0;
 
 	display: flex;
 	flex-direction: column;
@@ -32,14 +32,26 @@ export const LoginContainer = styled.form`
 
 	.submit-button {
 		margin-top: 24px;
-		margin-bottom: 91px;
 
 		width: 423px;
 		height: 62px;
 	}
 
+	h6 {
+		text-align: center;
+		margin-top: 24px;
+		max-width: 423px;
+	}
+	span {
+		margin-inline: 6px;
+	}
+	h6 a {
+		color: #2a7ae4;
+	}
+
 	@media screen and (max-width: 1024px) {
 		padding-top: 97px;
+		padding-bottom: 76px;
 
 		display: flex;
 		flex-direction: column;
@@ -59,9 +71,13 @@ export const LoginContainer = styled.form`
 
 		.submit-button {
 			margin-top: 16px;
-			margin-bottom: 76px;
 
-			width: 109px;
+			height: 41px;
+			width: 275px;
+		}
+
+		h6 {
+			max-width: 275px;
 		}
 	}
 `;

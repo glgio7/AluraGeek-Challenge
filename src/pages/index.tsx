@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import ProductsWrapper from "../components/ProductsWrapper";
 import Products from "../db.json";
 
-interface IProduct {
+export interface IProduct {
 	title?: string;
 	name: string;
 	price: string;
@@ -10,7 +10,7 @@ interface IProduct {
 	image_path: string;
 }
 
-interface IProductsLists {
+export interface IProductsLists {
 	[key: string]: IProduct[];
 }
 
