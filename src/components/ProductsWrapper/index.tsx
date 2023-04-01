@@ -9,7 +9,7 @@ type ProductsWrapperProps = {
 };
 
 const ProductsWrapper = ({ title, productList }: ProductsWrapperProps) => {
-	const address = title?.toLowerCase().replace(" ", "+");
+	const address = title?.toLowerCase().replace(" ", "1");
 
 	return (
 		<S.Wrapper>

@@ -11,7 +11,7 @@ const productsLists: IProductsLists = Products;
 
 const Category = () => {
 	const { address } = useParams();
-	const list = address ? address?.replace("+", "_") : "";
+	const list = address ? address?.replace("1", "_") : "";
 
 	return (
 		<S.Wrapper>
