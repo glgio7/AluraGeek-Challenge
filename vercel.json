@@ -3,11 +3,11 @@
 	"builds": [
 		{
 			"src": "server/index.ts",
-			"use": "@vercel/node",
-			"config": {
-				"includeFiles": ["db.json"]
-			}
+			"use": "@vercel/node"
 		}
 	],
-	"routes": [{ "src": "/api/(.*)", "dest": "server/index.ts" }]
+	"routes": [
+		{ "handle": "filesystem" },
+		{ "src": "/(.*)", "dest": "/server/index.ts" }
+	]
 }
