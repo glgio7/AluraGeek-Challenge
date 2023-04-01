@@ -3,7 +3,7 @@ import { Router } from "express";
 const routes = Router();
 
 routes.get("/products", (req, res) => {
-	return res.status(200).json({ message: "Deu certo!" });
+	return res.status(200).json({ message: "Produtos aparecerão aqui" });
 });
 
 export default routes;
