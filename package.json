@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"host": "vite --host",
+		"prebuild": "npm install -g typescript",
 		"build": "tsc && vite build",
 		"preview": "vite preview"
 	},
