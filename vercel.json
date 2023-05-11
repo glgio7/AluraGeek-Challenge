@@ -3,11 +3,11 @@
 	"builds": [
 		{ "src": "server/src/index.ts", "use": "@vercel/node" },
 		{
-			"src": "client",
+			"src": "client/src/index.tsx",
 			"use": "@vercel/static-build",
 			"config": {
-				"outputDirectory": "dist/client",
-				"entryFiles": ["src/index.html"]
+				"outputDirectory": "client/dist",
+				"entryFiles": ["client/src/index.html"]
 			}
 		}
 	],
@@ -18,8 +18,8 @@
 			"dest": "server/src/index.ts"
 		},
 		{
-			"src": "/.*",
-			"dest": "dist/client/index.html"
+			"src": "/(.*)",
+			"dest": "client/dist/index.html"
 		}
 	]
 }
