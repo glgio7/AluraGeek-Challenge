@@ -2,13 +2,23 @@
 	"version": 2,
 	"builds": [
 		{ "src": "server/src/index.ts", "use": "@vercel/node" },
-		{ "src": "client/package.json", "use": "@vercel/static-build" }
+		{
+			"src": "client/package.json",
+			"use": "@vercel/static-build",
+			"config": {
+				"public": true
+			}
+		}
 	],
 	"routes": [
 		{ "handle": "filesystem" },
 		{
 			"src": "/api/(.*)",
 			"dest": "server/src/index.ts"
+		},
+		{
+			"src": "/assets/(.*)",
+			"dest": "https://desafio-alurageek.vercel.app/assets/$1"
 		},
 		{
 			"src": "/(.*)",
