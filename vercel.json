@@ -17,10 +17,6 @@
 			"dest": "server/src/index.ts"
 		},
 		{
-			"src": "/assets/(.*)",
-			"dest": "https://desafio-alurageek.vercel.app/assets/$1"
-		},
-		{
 			"src": "/(.*)",
 			"dest": "client/index.html"
 		}
